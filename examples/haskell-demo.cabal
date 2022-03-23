@@ -1,0 +1,17 @@
+cabal-version:      3.6
+name:               haskell-demo
+version:            0.1.0.0
+author:             Yvan Sraka
+maintainer:         yvan@sraka.xyz
+
+executable haskell-demo
+    main-is:          Main.hs
+    build-depends:    base
+    hs-source-dirs:   app
+    default-language: Haskell2010
+    -- We tell GHC linker where to find the `libhello.a`
+    extra-lib-dirs:   ../target/debug ../target/release
+    extra-libraries:  hello
+
+-- TODO: a good follow-up here would be to use `cabal2nix` to rather rely on
+-- `nix-build` to build our Haskell demo.
