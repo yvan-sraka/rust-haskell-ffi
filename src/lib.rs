@@ -19,8 +19,8 @@
 //! ```shell
 //! cargo build # build the library (both `libhello.a` and `libhello.rlib`)
 //! cd examples
-//! cargo run # run the Rust example (`examples/app/Main.hs`)
-//! cabal run # run the Haskell example (`examples/src/main.rs`)
+//! cargo run # run the Rust example (`examples/src/main.rs`)
+//! cabal run # run the Haskell example (`examples/app/Main.hs`)
 //! ```
 //!
 //! For more high-level (type-preserving) bindings, give a try to
